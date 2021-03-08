@@ -40,8 +40,8 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-left'],
         'items' => [
             ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'Categorias', 'url' => ['/categorias/index']],
-            ['label' => 'Cursos', 'url' => ['/cursos/index']],
+            ['label' => 'Categorias', 'url' => ['/categoria/index']],
+            ['label' => 'Cursos', 'url' => ['/curso/index']],
             ['label' => 'Contato', 'url' => ['/site/contact']],
         ],
     ]);
