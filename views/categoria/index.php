@@ -1,9 +1,17 @@
 <?php
-/* @var $this yii\web\View */
+use yii\helpers\Html;
+use yii\widgets\linkPager;
 ?>
-<h1>categoria/index</h1>
+<h1 class="page-header">Categoria</h1>
 
-<p>
-    You may change the content of this page by modifying
-    the file <code><?= __FILE__; ?></code>.
-</p>
+<ul class="list-group">
+    <?php foreach ($categories as $category) : ?>
+
+    <li class="list-group-item">
+        <a href=""> <?=$category-> nome; ?> </a>
+    </li>
+
+<? php endforeach; ?>
+</ul>
+
+<?= LinkPager::widget([ 'pagination' => $pagination]); ?>
